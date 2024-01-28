@@ -1,0 +1,90 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ring {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--clr));
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.deposit {
+  padding: 20px;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.inputBx {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.amount-selector {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-buttons button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.wallet-balance {
+  margin-top: 20px;
+}
+
+.wallet-balance p {
+  margin: 0;
+}
+
+.wallet-balance span {
+  font-weight: bold;
+}
+
+input[type="button"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.success-snackbar {
+  background-color: #4caf50; /* Green background color for success */
+  color: #fff; /* White text color for success */
+}

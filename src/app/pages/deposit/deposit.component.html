@@ -1,0 +1,34 @@
+<!-- deposit.component.html -->
+
+<div class="parent">
+  <div class="ring">
+
+    <div class="deposit">
+      <h2>Wallet Deposit for {{loggedUserData?.firstName}} {{loggedUserData?.lastName}}</h2>
+      <div class="inputBx">
+        <label for="amount">Amount:</label>
+        <div class="amount-selector">
+          <input type="number" id="amount" [(ngModel)]="depositObj.amount" placeholder="Insert an amount to deposit" min="0" step="1">
+        </div>
+      </div>
+      <div class="inputBx">
+        <label for="currency">Currency:</label>
+        <select id="currency" [(ngModel)]="depositObj.currency">
+          <option value="EUR">Euro</option>
+          <option value="USD">Dollar</option>
+          <option value="GBP">Livre Sterling</option>
+          <option value="JPY">Yen</option>
+          <option value="CHF">Franc Suisse</option>
+        </select>
+      </div>
+      <div class="wallet-balance">
+        <p>Balance: <span id="walletBalance">{{ balance | number:'1.2-2' }}</span> <span id="walletCurrency"> EUR</span></p>
+      </div>
+      <br>
+      <div class="inputBx">
+        <input type="button" value="Deposit" (click)="onDeposit()">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,31 @@
+<!-- signup.component.html -->
+
+<div class="parent">
+  <div class="ring">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
+    <div class="signup">
+      <h2>Sign Up</h2>
+      <div class="inputBx">
+        <input type="text" [(ngModel)]="signupData.firstName" placeholder="First Name">
+      </div>
+      <div class="inputBx">
+        <input type="text" [(ngModel)]="signupData.lastName" placeholder="Last Name">
+      </div>
+      <div class="inputBx">
+        <input type="text" [(ngModel)]="signupData.email" placeholder="Email">
+      </div>
+      <div class="inputBx">
+        <input type="text" [(ngModel)]="signupData.phoneNumber" placeholder="Phone Number">
+      </div>
+      <div class="inputBx">
+        <input type="button" value="Sign Up" (click)="onSignUp()">
+      </div>
+      <div class="links">
+        <a href="#">Already have an account? Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+

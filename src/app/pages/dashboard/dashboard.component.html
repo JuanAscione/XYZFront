@@ -1,0 +1,54 @@
+<!-- dashboard.component.html -->
+<br>
+<div class="dashboard">
+  <div class="room">
+    <img src="../../../assets/standard_room_image.jpg" alt="Standard Room Image">
+    <h3>Standard Room</h3>
+    <p>€50 per night</p>
+    <ul>
+      <li>Single Bed</li>
+      <li>Wifi</li>
+      <li>TV</li>
+    </ul>
+    <div class="inputBx">
+      <input type="button" value="Book Now" (click)="standardRoom()">
+    </div>
+  </div>
+
+  <div class="room">
+    <img src="../../../assets/superior_room_image.jpg" alt="Superior Room Image">
+    <h3>Superior Room</h3>
+    <p>€100 per night</p>
+    <ul>
+      <li>Double Bed</li>
+      <li>Wifi</li>
+      <li>Flat-screen TV</li>
+      <li>Minibar</li>
+      <li>Air Conditioner</li>
+    </ul>
+    <div class="inputBx">
+      <input type="button" value="Book Now" (click)="superiorRoom()">
+    </div>
+  </div>
+
+  <div class="room">
+    <img src="../../../assets/suite_image.jpg" alt="Suite Image">
+    <h3>Suite</h3>
+    <p>€200 per night</p>
+    <ul>
+      <li>Double Bed</li>
+      <li>Wifi</li>
+      <li>Flat-screen TV</li>
+      <li>Minibar</li>
+      <li>Air Conditioner</li>
+      <li>Bathtub</li>
+      <li>Terrace</li>
+    </ul>
+    <div class="inputBx">
+      <input type="button" value="Book Now" (click)="suiteRoom()">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<app-footer></app-footer>

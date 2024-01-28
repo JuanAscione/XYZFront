@@ -1,0 +1,47 @@
+.form-control {
+    border: 1px solid black !important;
+}
+.form-select {
+    border: 1px solid black !important;
+}
+
+.rounded-btn {
+    border-radius: 20px;
+}
+.navbar {
+    background-color: #643019 !important;
+    color: white !important;
+}
+.card-body {
+    border: 1px solid gray !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Add these styles to your existing style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #eacfb3; /* Your desired background color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to full viewport height */
+}
+
+.container {
+  flex: 1; /* Use flex to push footer to the bottom */
+}
+
+.footer {
+  background-color: #643019; /* Your desired footer background color */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+
+
+

@@ -1,0 +1,40 @@
+<!-- reservations-summary.component.html -->
+
+<div class="parent">
+  <div class="ring">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
+    <div class="reservations-summary">
+      <h2>My Reservations Summary</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Check-In Date</th>
+          <th>Number of Nights</th>
+          <th>Number of Rooms</th>
+          <th>Room Type</th>
+          <th>Status</th>
+          <th>Total Price</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{ reservation.checkInDate | date: 'shortDate' }}</td>
+          <td>{{ reservation.numberOfNights }}</td>
+          <td>{{ reservation.rooms.length }}</td>
+          <td>{{ reservation.rooms[0].type }}</td>
+          <td>{{ reservation.status }}</td>
+          <td>{{ reservation.totalPrice | currency: 'EUR':'symbol':'1.2-2' }}</td>
+          <td>
+            <button class="action-button" (click)="confirmReservation(reservation.id)" [disabled]="isConfirmButtonDisabled(reservation.status)">Confirm</button>
+            <button class="action-button" (click)="deleteReservation(reservation.id)">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

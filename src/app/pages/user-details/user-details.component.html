@@ -1,0 +1,30 @@
+<!-- my-details.component.html -->
+
+<div class="parent">
+  <div class="ring">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
+    <div class="my-details">
+      <h2>My Details</h2>
+      <div class="details-section">
+        <label>Email:</label>
+        <p>{{ loggedUserData.email }}</p>
+      </div>
+      <div class="details-section">
+        <label>First Name:</label>
+        <p>{{ loggedUserData.firstName }}</p>
+      </div>
+      <div class="details-section">
+        <label>Last Name:</label>
+        <p>{{ loggedUserData.lastName }}</p>
+      </div>
+      <div class="details-section">
+        <label>Phone Number:</label>
+        <p>{{ loggedUserData.phoneNumber }}</p>
+      </div>
+      <!-- Additional details can be added based on your signup information -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

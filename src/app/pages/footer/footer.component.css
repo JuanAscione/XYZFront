@@ -1,0 +1,31 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h4 {
+  color: #69524e;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #643019;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i {
+  margin-right: 10px;
+}
